@@ -13,22 +13,24 @@
         <div class="row">
 
             <% grams.forEach(function(gram) {  %>
-            <div class="instagram-pic">
-                <a href="<% gram.link %" target="_blank"> <img src="<% gram.images.standard_resolutions.url %>"> </a>
-            </div>
-            <div class="instagram-bar">
-                <div class="likes">
-                    <i class="material-icons favourite"> </i>
-                    <%= gram.likes.count  %>
+                <div class="instagram-pic">
+                    <a href="<% gram.link %>" target="_blank">
+                        <img src="<% gram.images.standard_resolutions.url %>" class="image">
+                    </a>
                 </div>
-
-                <div class="comments">
+                <div class="instagram-bar">
                     <div class="likes">
                         <i class="material-icons favourite"> </i>
-                        <%= gram.comments.count  %>
+                        <%= gram.likes.count  %>
+                    </div>
+
+                    <div class="comments">
+                        <div class="likes">
+                            <i class="material-icons favourite"> </i>
+                            <%= gram.comments.count  %>
+                        </div>
                     </div>
                 </div>
-            </div>
             <% }); %>
 
         </div>

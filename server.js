@@ -3,6 +3,7 @@ var app = express();
 var instagram = require('instagram-node').instagram();
 
 app.use(express.static(__dirname + '/public'));
+
 app.set('views engine', 'ejs');
 
 instagram.use({
@@ -10,13 +11,13 @@ instagram.use({
     client_secret: 'cf58849261c3474b901d6959f37f626f'
 });
 
-app.get('/', function(req, res) {
+app.get('./', function(req, res) {
     instagram.media_popular(function(err, medias, remaining, limit){
        res.render('pages/index',  { grams: medias })
     });
 });
 
-app.listen(8080, function(err) {
+app.listen(8000, function(err) {
     if(err) {
         console.log("Error")
     } else {
