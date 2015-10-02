@@ -1,0 +1,20 @@
+.demo-layout-transparent {
+    /* img copyright http://hdwallpaper-hd.com/ */
+    background: url('../img/Golden-Gate-Bridge-HD-Wallpapers-WideScreen.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+}
+
+.instagram-pic {
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.instagram-pic img {
+
+}
