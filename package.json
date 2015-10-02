@@ -1,0 +1,25 @@
+{
+  "name": "photosviewer",
+  "version": "0.0.1",
+  "description": "photo viewing app to view photos coming in from instagram",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manidf/photosviewer.git"
+  },
+  "keywords": [
+    "node",
+    "photos",
+    "instagram",
+    "api"
+  ],
+  "author": "Mannuel Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manidf/photosviewer/issues"
+  },
+  "homepage": "https://github.com/manidf/photosviewer#readme"
+}
